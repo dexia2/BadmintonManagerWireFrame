@@ -9,21 +9,29 @@
     <title>バドミントン管理システム</title>
     <link rel="stylesheet" href="styles/reset.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
 </head>
 <body>
     <div class="cm-container cm-clearfix">
         <!-- Navigation -->
         <nav class="cm-navigation">
+            <img src="images/logo.png" class="cm-logo"  alt="練習管理を表すアイコンを表示しています。"/>
             <ul class="cm-menu">
-                <li><a href="#" class="cm-menu-item">目標</a></li>
-                <li><a href="#" class="cm-menu-item">今日の練習</a></li>
-                <li><a href="#" class="cm-menu-item">練習予定</a></li>
-                <li><a href="#" class="cm-menu-item">練習記録</a></li>
-                <li><a href="#" class="cm-menu-item">練習管理</a></li>
+                <li><a href="#" class="cm-menu-item"><i class="fa fa-sticky-note-o"></i>今日の練習</a></li>
+                <li><a href="#" class="cm-menu-item"><i class="fa fa-flag-o"></i>目標</a></li>
+                <li><a href="#" class="cm-menu-item"><i class="fa fa-check"></i>テーマ管理</a></li>
+                <li><a href="#" class="cm-menu-item"><i class="fa fa-exclamation-triangle"></i>課題管理</a></li>
+                <li><a href="#" class="cm-menu-item"><i class="fa fa-line-chart"></i>分析</a></li>
+                <li><a href="#" class="cm-menu-item"><i class="fa fa-book"></i>練習記録</a></li>
             </ul>
         </nav>
         <!-- Main -->
-        <main class="tp-contents">
+        <main class="tp-main">
+            <header class="tp-main-header">
+                <input type="text" class="tp-today-goal" name="today-goal"/>
+            </header>
+        </main>
+        <aside class="tp-sidebar tp-contents">
             <div class="tp-content">
                 <h1>今日の練習</h1>
                 <!-- Theme -->
@@ -62,7 +70,7 @@
                     <textarea class="tp-text-area"></textarea>
                 </div>
             </div>
-        </main>
+        </aside>
     </div>
 </body>
 </html>

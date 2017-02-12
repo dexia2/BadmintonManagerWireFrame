@@ -57,6 +57,12 @@ body > .container {
   width: 20%;
 }
 
+.cm-navigation .cm-logo {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 50px;
+}
+
 .cm-navigation .cm-menu {
   padding-top: 30px;
 }
@@ -66,20 +72,48 @@ body > .container {
   color: #000;
   padding: 10px;
   font-size: 1.5rem;
-  line-height: 1.5;
+  line-height: 2.0;
+}
+
+.cm-navigation .cm-menu .cm-menu-item .fa {
+  margin-right: 5px;
 }
 
 /* =========================================================
  Private
 ========================================================= */
 
-/* Parts
+/* Main
 --------------------------------------------------------- */
 
+/* Parts */
+.tp-main {
+  float: left;
+  background-color: #fff;
+  width: 40%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.tp-main .tp-main-header {
+  width:100%;
+  padding-left: 5%;
+  border-bottom: 2px solid #aaa;
+}
+
+.tp-main .tp-main-header input{
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+/* Sidebar
+--------------------------------------------------------- */
+
+/* Parts */
 .tp-contents {
   float: left;
   background-color: #fff;
-  width: 80%;
+  width: 40%;
   height: 100%;
   padding-left: 5%;
   padding-top: 40px;
@@ -117,10 +151,7 @@ body > .container {
   height: 8rem;
 }
 
-
-/* Theme
---------------------------------------------------------- */
-
+/* Theme */
 .tp-content .tp-dialog .tp-theme {
   background-color: #eee;
 }
@@ -132,9 +163,7 @@ body > .container {
   background-color: #fff;
 }
 
-
-/* Practice Menu
---------------------------------------------------------- */
+/* Practice Menu */
 
 .tp-content .tp-practice-menu {
   padding-top: 40px;
