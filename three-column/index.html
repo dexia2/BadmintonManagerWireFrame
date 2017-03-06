@@ -25,52 +25,73 @@
                 <li><a href="#" class="cm-menu-item"><i class="fa fa-book"></i>練習記録</a></li>
             </ul>
         </nav>
-        <!-- Main -->
-        <main class="tp-main">
-            <header class="tp-main-header">
-                <input type="text" class="tp-today-goal" name="today-goal"/>
-            </header>
-        </main>
-        <aside class="tp-sidebar tp-contents">
-            <div class="tp-content">
-                <h1>今日の練習</h1>
-                <!-- Theme -->
-                <div class="tp-dialog tp-theme-dialog">
-                    <div class="tp-theme">
+        <div class="tp-contents">
+            <div class="tp-summary">
+                <header class="tp-header">
+                    <input type="text" class="tp-goal-input" name="goal-input"/>
+                </header>
+                <div class="tp-summary-main">
+                    <h1>今日の練習</h1>
+                    <div class="tp-info">
+                        <p class="tp-datetime">
+                            <span class="tp-date">2017年1月1日</span>
+                            <span class="tp-time">19:00〜21:00</span>
+                        </p>
+                        <p class="tp-place">東京体育館</p>
+                    </div>
+                    <div class="tp-menu">
+                        <div class="tp-form">
+                            <input type="text" class="tp-menu-input" name="menu-input"/>
+                        </div>
+                        <div class="tp-table">
+                            <div class="tp-row">
+                                <div class="tp-name">2対1</div>
+                                <div class="tp-theme">体力の向上</div>
+                            </div>
+                            <div class="tp-row">
+                                <div class="tp-name">素振り</div>
+                                <div class="tp-theme">打点の確認</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-detail">
+                <div class="tp-header">
+                    <h2 class="tp-name">2対1</h2>
+                </div>
+                <div class="tp-info">
+                    <p class="tp-amount">30分</p>
+                    <p class="tp-theme">出来る限り、広くコートをカバーすることを意識した。</p>
+                </div>
+                <div class="tp-theme-dialog">
+                    <div class="tp-header">
                         <h2>テーマ</h2>
                     </div>
                     <div class="tp-dialog-form">
-                        <textarea class="tp-text-area"></textarea>
+                        <textarea class="tp-theme-input"></textarea>
                     </div>
                 </div>
-                <!-- Practice Menu -->
-                <div class="tp-practice-menu">
-                    <h2>メニュー</h2>
-                    <table class="tp-practice-menu-list">
-                        <tr>
-                            <td>2対1</td>
-                            <td>30分☓2</td>
-                            <td>先輩と</td>
-                        </tr>
-                        <tr>
-                            <td>基礎打ち</td>
-                            <td>15分</td>
-                            <td>感覚が良かった</td>
-                        </tr>
-                    </table>
-                </div>
-                <!-- Memo -->
-                <div class="tp-input-form tp-memo-form">
-                    <h2>メモ</h2>
-                    <textarea class="tp-text-area"></textarea>
-                </div>
-                <!-- Think -->
-                <div class="tp-input-form tp-think-form">
-                    <h2>次回への反省</h2>
-                    <textarea class="tp-text-area"></textarea>
+                <div class="tp-comments">
+                    <h2>コメント</h2>
+                    <div class="tp-form">
+                        <textarea class="tp-comment-input"></textarea>
+                    </div>
+                    <div class="tp-table-container">
+                        <table class="tp-table">
+                            <tr>
+                                <td>早いスマッシュに対応できなかった。</td>
+                                <td>１月１日18:00</td>
+                            </tr>
+                            <tr>
+                                <td>体力が持たなかった。</td>
+                                <td>１月１日19:00</td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </aside>
+        </div>
     </div>
 </body>
 </html>

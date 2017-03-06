@@ -83,11 +83,16 @@ body > .container {
  Private
 ========================================================= */
 
-/* Main
+/* Common
 --------------------------------------------------------- */
+.tp-contents {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
 
 /* Parts */
-.tp-main {
+.tp-summary {
   float: left;
   background-color: #fff;
   width: 40%;
@@ -95,87 +100,160 @@ body > .container {
   padding-top: 10px;
 }
 
-.tp-main .tp-main-header {
-  width:100%;
-  padding-left: 5%;
-  border-bottom: 2px solid #aaa;
-}
-
-.tp-main .tp-main-header input{
-  width: 80%;
-  margin-bottom: 10px;
-}
-
-/* Sidebar
+/* Common
 --------------------------------------------------------- */
 
-/* Parts */
-.tp-contents {
-  float: left;
-  background-color: #fff;
-  width: 40%;
-  height: 100%;
+/* Header */
+.tp-summary .tp-header {
+  width:100%;
   padding-left: 5%;
-  padding-top: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
 }
 
-.tp-contents .tp-content h1 {
+.tp-summary .tp-header input {
+  width: 90%;
+}
+
+/* Info */
+.tp-summary h1 {
   font-size: 2.0rem;
 }
 
-.tp-contents .tp-content h2 {
+.tp-summary .tp-summary-main {
+    padding-top: 40px;
+    padding-left: 5%;
+}
+
+.tp-summary .tp-summary-main .tp-info {
+    padding-top: 15px;
+    line-height: 1.5em;
+    padding-bottom: 10px;
+}
+
+/* Form */
+.tp-summary .tp-menu .tp-form {
+    padding-bottom: 20px;
+}
+
+.tp-summary .tp-menu .tp-form input {
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  line-height: 3em;
+}
+
+/* Table */
+.tp-summary .tp-menu .tp-table .tp-row {
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+.tp-summary .tp-menu .tp-table .tp-row .tp-name {
+  font-size: 1.8rem;
+  line-height: 2.0em;
+}
+
+.tp-summary .tp-menu .tp-table .tp-row .tp-theme {
+  font-size: 1.4rem;
+  line-height: 2.3em;
+}
+
+/* Detail
+--------------------------------------------------------- */
+
+/* Common */
+.tp-detail {
+  float: left;
+  background-color: #fff;
+  border-left: 1px solid #aaa;
+  width: 40%;
+  height: 100%;
+  padding-left: 1%;
+  padding-top: 10px;
+  padding-right: 1%;
+}
+
+.tp-detail h1 {
+  font-size: 2.0rem;
+}
+
+.tp-detail h2 {
   font-size: 1.6rem;
 }
 
-.tp-content .tp-dialog {
+/* Header */
+.tp-detail .tp-header {
+  background-color: #dcdddd;
+  font-size: 1.8rem;
+  line-height: 2.3em;
+  border-radius: 4px;
+  padding-left:10px;
+}
+
+/* Header */
+.tp-detail .tp-info {
+  margin-top: 20px;
+  padding-left:10px;
+  font-size: 1.4rem;
+  line-height: 1.3em;
+}
+
+.tp-detail .tp-info .tp-theme {
+  margin-top: 20px;
+}
+/* Theme */
+.tp-detail .tp-theme-dialog {
   margin-top: 30px;
-  width: 80%;
+  width: 100%;
   border: 2px solid #aaa;
   border-radius: 8px;
 }
 
-.tp-content .tp-text-area {
-  font-size: 1.3rem;
-  font-family: Arial, sans-serif;
-  color: #aaa;
-  resize:none;
-}
-
-.tp-content .tp-input-form {
-  margin-top: 20px;
-}
-
-.tp-input-form .tp-text-area {
-  margin-top: 10px;
-  width: 80%;
-  height: 8rem;
-}
-
-/* Theme */
-.tp-content .tp-dialog .tp-theme {
+.tp-detail .tp-theme-dialog .tp-header {
   background-color: #eee;
+  padding-left:10px;
 }
 
-.tp-content .tp-theme-dialog .tp-dialog-form .tp-text-area {
+.tp-detail .tp-theme-dialog .tp-dialog-form .tp-theme-input {
   border: none;
   width: 100%;
   height: 5rem;
   background-color: #fff;
 }
 
+/* Comment */
+.tp-detail .tp-comments .tp-form .tp-comment-input {
+  font-size: 1.3rem;
+  font-family: Arial, sans-serif;
+  color: #aaa;
+  resize:none;
+  width: 100%;
+  line-height: 3rem;
+  height: 5rem;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
 /* Practice Menu */
 
-.tp-content .tp-practice-menu {
+.tp-detail .tp-comments {
   padding-top: 40px;
 }
 
-.tp-practice-menu .tp-practice-menu-list {
+.tp-detail .tp-table {
   margin-top: 10px;
   border-collapse: collapse;
-  width: 80%;
+  width: 100%;
 }
 
-.tp-practice-menu .tp-practice-menu-list td {
+.tp-detail .tp-table td {
   border-bottom: #aaa 1px solid;
   text-align: left;
   padding: 10px;
